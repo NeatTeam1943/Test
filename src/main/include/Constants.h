@@ -4,12 +4,21 @@
 
 #pragma once
 
-/**
- * The Constants header provides a convenient place for teams to hold robot-wide
- * numerical or boolean constants.  This should not be used for any other
- * purpose.
- *
- * It is generally a good idea to place constants into subsystem- or
- * command-specific namespaces within this header, which can then be used where
- * they are needed.
- */
+namespace chassis
+{
+    constexpr int kRightMotorPort1 = 0;
+    constexpr int kRightMotorPort2 = 1;
+    constexpr int kLeftMotorPort1 = 2;
+    constexpr int kLeftMotorPort2 = 3;
+
+}
+
+namespace collecting
+{
+    constexpr int kMotorPort = 4;
+    constexpr double kPooooooooooooower = 5;
+}
+namespace control
+{
+    constexpr int kControllerPort = 0;
+}
